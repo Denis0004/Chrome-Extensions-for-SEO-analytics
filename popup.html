@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO Analyzer_5</title>
+  <!-- Подключаем Bootstrap -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container mt-3">
+    <ul class="nav nav-tabs" id="tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#" data-tab="structure">Структура</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-tab="frameworks">Технологии</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-tab="sitemap">Сервисы</a>
+      </li>
+    </ul>
+
+    <div id="structure" class="tab-content active">
+      <h2>Структура</h2>
+      <table class="table">
+        <tr><td>Title:</td><td id="meta-title"></td></tr>
+        <tr><td>H1:</td><td id="meta-h1"></td></tr>
+        <tr><td>Description:</td><td id="meta-description"></td></tr>
+        <tr><td>Robots:</td><td id="meta-robots"></td></tr>
+        <tr><td>Keywords:</td><td id="meta-keywords"></td></tr>
+        <tr><td>Locale:</td><td id="meta-locale"></td></tr>
+        <tr><td>URL:</td><td id="meta-url"></td></tr>
+        <tr><td>Apple Mobile Web App Capable:</td><td id="meta-apple-mobile-web-app-capable"></td></tr>
+        <tr><td>Sitemap:</td><td id="meta-sitemap"></td></tr>
+      </table>
+      <button id="get-tags" class="btn btn-primary btn-chek">Найти мета теги</button>
+      
+      
+    </div>
+
+    <div id="frameworks" class="tab-content">
+      <h2>Технологии</h2>
+      <table class="table">
+        <tr><td>CMS:</td><td id="cms"></td></tr>
+        <tr><td>JavaScript Framework:</td><td id="js-framework"></td></tr>
+        <tr><td>Backend Framework:</td><td id="backend-framework"></td></tr>
+        <tr><td>Metrics:</td><td id="metrics"></td></tr>
+      </table>
+      <button id="get-frameworks" class="btn btn-primary">Найти фреймворки</button>
+      <button id="export-excel" class="btn btn-success">Экспортировать в Excel</button>
+    </div>
+
+    <div id="sitemap" class="tab-content">
+      <div>
+        <a href="https://www.google.com/webmasters/tools/home?hl=ru" target="_blank" class="btn btn-primary service-button">Инструменты Google для вебмастеров</a>
+        <a href="https://www.semrush.com/" target="_blank" class="btn btn-success service-button">SEMrush (бесплатный доступ)</a>
+        <a href="https://ahrefs.com/free-seo-tools" target="_blank" class="btn btn-info service-button">Ahrefs (бесплатные инструменты)</a>
+        <a href="https://moz.com/free-seo-tools" target="_blank" class="btn btn-warning service-button">Moz (бесплатные инструменты)</a>
+    </div>
+
+    <div id="custom-services">
+        <h3>Добавить свой сервис</h3>
+        <input type="text" id="service-url" class="form-control" placeholder="Введите URL сервиса">
+        <input type="text" id="service-name" class="form-control" placeholder="Введите название сервиса">
+        <button class="btn btn-secondary" id="add-service">Добавить сервис</button>
+    </div>
+
+    <h3>Мои сервисы</h3>
+    <div id="user-services"></div>
+</div>
+  
+
+  <script src="xlsx.full.min.js"></script> 
+  <script src="popup.js"></script> 
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
