@@ -1,0 +1,44 @@
+body {
+    width: 500px;
+    height: 500px;
+}
+
+.tab-content {
+    margin-top: 20px;
+    display: none; 
+  }
+.tab-content.active {
+    display: block; 
+  }
+  
+table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+th, td {
+    padding: 10px;
+  }
+  
+.btn-custom {
+    background-color: #7586F1;
+    color: white;
+    
+  }
+  
+  .btn-chek {
+    margin: 15px;
+  }
+
+  #sitemap {
+    padding: 20px;
+}
+.service-button {
+    margin: 10px 10px;
+}
+.form-control {
+  margin: 10px 0; 
+}
+#custom-services {
+    margin-top: 20px;
+}
